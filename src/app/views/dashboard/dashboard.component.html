@@ -1,0 +1,44 @@
+<div class="dashboard-background overlap-hard">
+    <div class="dashboard-container">
+        
+        <div class="control">
+            <app-display-card [cardTitle]="titles.switchBoard"> 
+                <app-switchboard (selections)="switchBoardChange($event)" (submit)="switchBoardSubmit()"></app-switchboard>
+            </app-display-card>
+        </div>
+
+        <div class="IOMongo">
+            <app-display-card [cardTitle]="titles.comsDisplayMongo">
+                <app-communication-display 
+                [activeRequest]="mongoObject.request"  
+                [activeResponse]="mongoObject.response"
+                style="height: 100%;width: 100%;"></app-communication-display>
+            </app-display-card>
+        </div>
+
+        <div class="IONeo">
+            <app-display-card [cardTitle]="titles.comsDisplayNeo">
+                <app-communication-display 
+                [activeRequest]="neoObject.request" 
+                [activeResponse]="neoObject.response"
+                style="height: 100%;width: 100%;"></app-communication-display>
+            </app-display-card>
+        </div> 
+
+        <div class="analytics">
+            <app-display-card [cardTitle]="titles.resultsDisplay">
+                <app-results-display 
+                    style="height: 100%;width: 100%;"
+                    [mongoTime]="mongoObject.responseTime"
+                    [neoTime]="neoObject.responseTime"
+                ></app-results-display>
+            </app-display-card>
+        </div>
+
+        <div class="options">
+            <app-display-card [cardTitle]="titles.optionsDisplay">
+                <app-options-display style="height: 100%;width: 100%;"></app-options-display>
+            </app-display-card>
+        </div>
+    </div>
+</div>

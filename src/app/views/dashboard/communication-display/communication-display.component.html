@@ -1,0 +1,17 @@
+<div class="coms-container">
+    <div class="request-container">
+        <h3 class="console-top">Request</h3>
+        <textarea 
+        class="request-content console-body" 
+        name="request"
+        [(ngModel)]="activeRequest">
+        </textarea>
+    </div>
+
+    <div class="response-container ">
+        <h3 class="console-top">Response</h3>
+        <textarea class="response-content console-body" readonly>
+            {{activeResponse | json}}
+        </textarea>
+    </div>
+</div>

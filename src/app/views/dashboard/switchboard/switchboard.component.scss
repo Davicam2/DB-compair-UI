@@ -1,0 +1,30 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:100%;
+    mat-button-toggle-group{
+        border-radius: 10px;
+        color:white;
+        background-color: black;
+        margin-bottom: 10px;
+        width:fit-content;
+
+        mat-button-toggle{
+            border: 1px solid #32da32;
+            color:white;
+            background: none;
+            
+            &:hover{
+                background-color: #32da32;
+                color:black;
+            }
+        }
+    }
+    .mat-button-toggle-checked{
+        background-color: #32da32;
+        color:black;
+        
+    }
+
+}

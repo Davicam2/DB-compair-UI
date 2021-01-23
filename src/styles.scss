@@ -1,1 +1,83 @@
-/* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+$app-green: #32da32;
+
+body{
+    margin: 0px;
+    font-family: sans-serif;
+}
+
+.overlap{
+    &-standard{
+        padding: 10px;
+        background-color: #ccc;
+    }
+    &-hard{
+        padding:20px;
+        background-color: black;
+    }
+}
+.shadow{
+    &-min{
+        box-shadow: 1px 1px 10px black;
+    }
+}
+.sizeX{
+    &-small{
+        width:400px;
+    }
+    &-medium{
+        width:800px;
+    }
+    &-large{
+        width:1000px;
+    }
+}
+.sizeY{
+    &-small{
+        height:200px;
+    }
+    &-medium{
+        height:400px;
+    }
+    &-large{
+        height:600px;
+    }
+}
+.console{
+    &-top{
+        text-align: center;
+        background-color: #ccc;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        margin-bottom: 0px;
+        height:25px;
+        letter-spacing: 2px;
+    }
+    &-body{
+        background-color: black;
+        color: white;
+        margin:0px;
+        border:none;
+        padding: 0px;
+        resize: none;
+        outline: none;
+        white-space: pre-wrap;
+        overflow: auto;
+    }
+}
+
+.button{
+    &-main{
+        background: none;
+        border: 2px solid $app-green;
+        color: white;
+        border-radius: 6px;
+        cursor: pointer;
+    }
+
+}
+
+.mat-dialog-container{
+    background:none;
+}

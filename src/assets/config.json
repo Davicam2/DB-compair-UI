@@ -1,0 +1,56 @@
+{
+    "URIS":{
+        "BASE":{
+            "express":"http://127.0.0.1:3000/"
+        },
+        "SERVICE":{
+            "test":"test",
+            "NEO4J":{
+                "getTest":"neoTestResponse",
+                "getQuery":"neoDBQuery"
+            },
+            "MONGO":{
+                "getTest":"mongoTestResponse",
+                "getQuery":"mongoDBQuery"
+            }
+        }
+    },
+    "MONGO_SETTINGS":{
+        "REQUESTS":{
+            "getOneLevel":{
+                "id": 1,
+                "type": "singleLayer",
+                "request":"db.table.find({})"
+            },
+            "getMultipleLevels":{
+                "id":2,
+                "type":"multiLayer",
+                "request":""
+            },
+            "getPath":{
+                "id":3,
+                "type":"subTree",
+                "request":""
+            }
+        }
+    },
+    "NEO_SETTINGS":{
+        "REQUESTS":{
+            "getOneLevel":{
+                "id":1,
+                "type":"singleLayer",
+                "request":"MATCH (p:Person)"
+            },
+            "getMultipleLevels":{
+                "id":2,
+                "type":"multiLayer",
+                "request":""
+            },
+            "getPath":{
+                "id":3,
+                "type":"subTree",
+                "request":""
+            }
+        }
+    }
+}

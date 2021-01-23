@@ -1,0 +1,42 @@
+.coms-container{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+
+   .request{
+       &-container{
+           display: flex;
+           flex-direction: column;
+           justify-content: flex-start;
+            height: 100%;
+            width: 49%;
+       }
+       &-content{
+        border-left: 1px solid white;
+        border-right: 1px solid white;
+        border-bottom: 1px solid white;
+         height:calc(90% - 1px);
+         width: calc(100%- 2px);
+       }
+   }
+
+   .response{
+       &-container{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            height: 100%;
+            width: 49%;
+       }
+       &-content{
+        border-left: 1px solid white;
+        border-right: 1px solid white;
+        border-bottom: 1px solid white;
+         height:calc(90% - 1px);
+         width:calc( 100%- 2px);
+           
+       }
+   }
+}

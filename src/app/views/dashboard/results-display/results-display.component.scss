@@ -1,0 +1,28 @@
+.analytics{
+    width: 100%;
+    color: white;
+    
+
+    input{
+        background: none;
+        border: none;
+        outline: none;
+        color: white;
+    }
+
+    &-section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid #32da32;
+        width: calc(100% - 22px);
+        padding:10px;
+    }
+
+    .timer{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+}
